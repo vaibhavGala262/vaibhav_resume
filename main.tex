@@ -5,13 +5,6 @@
 % License : MIT
 %------------------------
 
-
-
-\newcommand{\tightAchievementItem}[1]{
-  \item \small{#1} \vspace{-5pt}
-}
-
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -25,23 +18,11 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{hanging}    %
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -50,8 +31,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.85in}
+\addtolength{\textheight}{1.6in}
 
 \urlstyle{same}
 
@@ -59,12 +40,20 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% % Sections formatting
+% \titleformat{\section}{
+%   \vspace{-4pt}\scshape\raggedright\large
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% \pdfgentounicode=1
+
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
 \pdfgentounicode=1
 
 %-------------------------
@@ -106,152 +95,173 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Vaibhav Gala} \\ \vspace{1pt}
-    \small +91-8779047056 $|$ \href{mailto:x@x.com}{\underline{vaibhavgala262@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/vaibhav-gala-a39029280}{\underline{LinkedIn}} $|$
-    \href{https://github.com/vaibhavGala262}{\underline{GitHub}}
+    \small +91-8779047056 $|$
+    \href{mailto:vaibhavgala262@gmail.com}{\underline{vaibhavgala262@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/vaibhav-gala-a39029280}{\underline{linkedin.com/in/vaibhavgala}} $|$
+    \href{https://github.com/vaibhavGala262}{\underline{github.com/vaibhavGala262}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Dwarkadas J. Sanghvi College of Engineering}{Mumbai, Maharashtra}
-      {Bachelor of Technology in Computer Science , CGPA :8.73}{Aug. 2023 -- Present}
-    \resumeSubheading
+      {Bachelor of Technology in Computer Science, CGPA: 8.88 }{August 2023 -- June 2027}
+      \resumeSubheading
       {SVKM's Mithibai College of Arts}{Mumbai, Maharashtra}
-      {HSC – Maharashtra Board, PCM: 89.67}{Aug. 2016 -- May 2018}
+      {HSC -- Maharashtra Board, PCM: 89.67}{August 2021 -- May 2023}
+   
   \resumeSubHeadingListEnd
 
 
+  
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
 
+    \resumeProjectHeading{\textbf{Nomura} $|$ \emph{IT Intern}}{July 2026 -- Present}
+\resumeItemListStart
+\resumeItem{Contributed to an AI-assisted \textbf{SonarQube--LLM--GitLab} pipeline for automated code fixes.}
+\resumeItem{Migrated \textbf{Jenkins} pipelines to \textbf{GitLab}, reducing average pipeline execution time by \textbf{40\%} across \textbf{10+ projects}.}
+\resumeItem{Delivered \textbf{Power BI} dashboard for a company-wide survey with \textbf{50+ columns}, streamlining data visualization.}
+\resumeItem{\textbf{Modernized} 18K-LOC \textbf{Java + Spring Boot + Kafka} codebase from \textbf{Java 8, Spring Boot 2.1} to \textbf{Java 21, Spring Boot 3.5}, slashing critical Nexus IQ vulnerabilities by \textbf{90\%} (\textbf{60→6}) and severe by \textbf{87\%} (\textbf{400→50}).}
+\resumeItem{Built \textbf{Graphify} knowledge graphs across \textbf{10+ projects}, reducing LLM context/token usage by \textbf{70\%} and automating index updates on every merge to \textbf{master}.}
+
+\resumeItemListEnd
+
+  
+    \resumeProjectHeading
+      {\textbf{\href{https://prismapp.in}{Prism}} $|$ \emph{Co-Founder (Tech)}}{September 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Leading backend architecture for an AI based image sharing app serving \textbf{50+ users} across \textbf{20+ countries}.}
+        \resumeItem{Designed cloud infrastructure on \textbf{AWS (EC2, S3)}, \textbf{Cloudflare}, and \textbf{Supabase} with \textbf{99.93\% uptime}.}
+        \resumeItem{Scaled storage pipeline to handle \textbf{1,000+ images} with secure cross-service integrations and low-latency delivery.}
+        \resumeItem{Led system design and deployment, reducing inter-service latency by \textbf{30\%} through architecture optimizations.}
+      \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %   {\textbf{\href{https://aahanyacreatives.vercel.app/}{Aahaanya Creatives}} $|$ \emph{Freelance Web Developer}}{June 2025 -- September 2025}
+    %   \resumeItemListStart
+    %     \resumeItem{Launched and deployed a production-ready website using \textbf{Next.js (SSR)}, improving page load speed by \textbf{40\%}.}
+    %     \resumeItem{Integrated \textbf{GCP NoSQL database} managing \textbf{500+ dynamic content records} with low-latency data access.}
+    %     \resumeItem{ Configured \textbf{AWS S3} media storage handling \textbf{200+ assets}, reducing backend load by \textbf{35\%}.}
+    %     \resumeItem{Delivered full project end-to-end within \textbf{3-month} timeline, meeting all client requirements on schedule.}
+    %   \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+  
 
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
-\begin{itemize}[leftmargin=0.30in]
-  \tightAchievementItem{Achieved \textbf{AIR 6934} in \textbf{JEE Main 2023} with \textbf{99.4 percentile}, ranked in top \textbf{0.6\%} of \textbf{11.13 lakh} candidates.}
+  \resumeItemListStart
+    \resumeItem{Achieved \textbf{AIR 6934} in \textbf{JEE Main 2023} with \textbf{99.4 percentile}, ranked in top \textbf{0.6\%} of \textbf{11.13 lakh} candidates.}
+    \resumeItem{Secured \textbf{AIR 11640} in \textbf{JEE Advanced 2023}, among the top \textbf{6.5\%} of \textbf{1.8 lakh} qualified aspirants.}
+    \resumeItem{Scored \textbf{99/100} in Operating Systems, among the highest in a batch of \textbf{206} Computer Engineering students.}
+    \resumeItem{Won \textbf{1st Place} at \textbf{HackX 2.0} (\textbf{top 0.1\%}, \textbf{1,300+ participants}) - SubTerra AI, GIS-based excavation platform.}
+    \resumeItem{Reached \href{https://www.codechef.com/users/vaibhavgala262}{\textbf{CodeChef}} \textbf{3-Star} (Max rating: \textbf{1627}), outperforming over \textbf{90\%} of 180,000+ active coders globally.}
+   
+  \resumeItemListEnd
 
-  \tightAchievementItem{Secured \textbf{AIR 11640} in \textbf{JEE Advanced 2023}, among the top \textbf{6.5\%} of \textbf{1.8 lakh} qualified aspirants.}
+% \vspace{3pt}
+% \hrule height 0.4pt
+% \vspace{3pt}
+% \noindent\hspace{0in}\textbf{Relevant Coursework:} \small Operating Systems, DBMS, OOP, Java, Computer Networks, Data Structures and Algorithms, Machine Learning, Artificial Intelligence, Big Data Analytics, Software Engineering, Data Warehousing and Mining.
+% \vspace{-8pt}
+
+
+
+% \vspace{3pt}
+% \hrule height 0.4pt
+% \vspace{3pt}
+% \begin{hangparas}{0.0in}{1}
+% \noindent\textbf{Relevant Coursework:} \small Operating Systems, DBMS, OOP, Java, Computer Networks, Data Structures and Algorithms, Machine Learning, Artificial Intelligence, Big Data Analytics, Software Engineering, Data Warehousing and Mining.
+% \end{hangparas}
+% \vspace{-14pt}
+
+
   
-  \tightAchievementItem{Scored \textbf{99.3 percentile} in \textbf{MHT-CET 2023}, placing in the top \textbf{0.7\%} out of \textbf{5.91 lakh} students.}
-
-  \tightAchievementItem{Scored \textbf{99/100} in Operating Systems, among the highest in a batch of \textbf{206} Computer Engineering students.}
-
-\tightAchievementItem{Solved \textbf{400+ problems} on LeetCode; currently ranked \textbf{202,237}, placing in the top \textbf{28\%} globally.}
-
-\tightAchievementItem{Reached CodeChef \textbf{3-Star} (Max rating: \textbf{1627}), outperforming over \textbf{90\%} of 180,000+ active coders globally.}
-
-  
-\end{itemize}
-
-  
-
-
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-    \resumeProjectHeading
-    {\textbf{\href{https://intern-connect-app.vercel.app/}{InternConnect}} $|$ \emph{Next.js, FastAPI, PostgreSQL, LangGraph,SupaBase}}{April 2025 -- June 2025}
-    \resumeItemListStart
-      \resumeItem{Built a full-stack platform to connect students and teachers for internship discovery and communication.}
-      \resumeItem{Implemented real-time chat for doubt clarification between students and faculty using WebSocket-based messaging}
-      \resumeItem{Integrated a LangGraph-based chatbot to answer internship queries via multi-agent tool use.}
-      \resumeItem{Added Excel export for enrolled students, saving \textbf{30–40 minutes} per batch and removing manual tracking.}
+  \resumeSubHeadingListStart
 
-    \resumeItemListEnd
+   
 
-  \resumeProjectHeading
-    {\textbf{\href{https://github.com/vaibhavGala262/NutShell}{NutShell}} $|$ \emph{C, POSIX, GNU Readline, Makefile}}{July 2025}
-    \resumeItemListStart
-      \resumeItem{Built a Unix-style shell to deepen understanding of \textbf{process creation}, memory, and job control in Linux.}
-      \resumeItem{Learnt key OS-level operations by implementing \texttt{fork()}, \texttt{exec()}, and \texttt{wait()} for task management.}
-      \resumeItem{Explored terminal interaction by integrating \textbf{GNU Readline} for command editing and history.}
-      \resumeItem{Added support for \textbf{built-in commands}, multi-command execution, and background jobs via shell parsing.}
-      \resumeItem{Structured project modularly using \texttt{parser.c}, \texttt{executor.c}, \texttt{builtins.c}, and Makefile automation.}
-    \resumeItemListEnd
+    
 
-  \resumeProjectHeading
-    {\textbf{\href{https://github.com/vaibhavGala262/CodeSanitizer}{CodeSanitizer}} $|$ \emph{TypeScript, VS Code API, Git Hooks}}{July 2025}
-    \resumeItemListStart
-      \resumeItem{Built a VS Code extension to remove debug prints and comments across \textbf{30+ languages},improving code hygiene.}
-      \resumeItem{Added highlight toggling, one-click cleaning, and undo support to streamline the debugging workflow.}
-      \resumeItem{Integrated Git support to clean staged files and enabled smart repository detection for consistent code quality.}
-      \resumeItem{Saved developers \textbf{10–15 minutes per commit} by automating repetitive code cleanup tasks.}
-    \resumeItemListEnd
+
 
     \resumeProjectHeading
-  {\textbf{\href{https://textutils-two-beige.vercel.app/}{TextUtils}} $|$ \emph{React, Vite, TailwindCSS, APIs}}{August 2024 -- Present}
-  \resumeItemListStart
-    \resumeItem{Built a responsive text utility app with case conversion, word/char counters, and smart formatting tools.}
-    \resumeItem{Implemented NLP features like word frequency, \textbf{70\%} text summarization, and Flesch readability scoring.}
-    \resumeItem{Added text-to-speech, speech-to-text (Web Speech API), and translation using Google Translate API.}
-    \resumeItem{Enabled export to PDF/DOCX, saving \textbf{2–3 minutes} per document and streamlining user workflow.}
-    \resumeItem{Enhanced UX with dark/light themes, keyboard shortcuts, analytics, and framer-motion animations.}
-  \resumeItemListEnd
-
-
-%-----------VIRTUAL EXPERIENCE-----------
-\section{Virtual Experience}
-\vspace{-0.8em} % <-- reduce vertical space after the section title
-\resumeSubHeadingListStart
-  \resumeProjectHeading
-    {\textbf{Deloitte Technology Consulting (Forage)} $|$ \emph{Virtual Job Simulation}}{July 2025}
-    \resumeItemListStart
-      \vspace{0.5em} % <-- Add this line for vertical spacing
-      \resumeItem{Drafted a software development proposal for a client dashboard based on simulated requirements.}
-      \resumeItem{Automated the merging of \textbf{2 JSON datasets} using Python, reducing manual formatting work by \textbf{80\%}.}
-    \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-
-
-
+      {\textbf{\href{https://github.com/vaibhavGala262/SnapLink}{SnapLink}} $|$ \emph{Spring Boot, Kafka, Redis, PostgreSQL, Prometheus}}{August 2025 -- January 2026}
+      \resumeItemListStart
+        \resumeItem{Architected URL shortener \textbf{2.8M redirects/day} with \textbf{98.9\% success rate} under 10K concurrent requests.}
+        \resumeItem{Achieved \textbf{100\% cache hit rate} with Redis for popular URLs, eliminating database calls with sub-ms lookups.}
+        \resumeItem{Designed Kafka async pipeline processing \textbf{2,857 events/sec}, reducing database operations by \textbf{95\%}.}
+        \resumeItem{Added Prometheus monitoring with Grafana dashboards tracking real-time system health and click analytics.}
+      \resumeItemListEnd
 
 
     
 
+      
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/vaibhavGala262/Viper}{Viper}} $|$ \emph{C, Epoll, Makefile, ApacheBench}}{July 2025 -- August 2025}
+      \resumeItemListStart
+        \resumeItem{Constructed modular HTTP server in C with routing and middleware, handling 50k+ concurrent requests.}
+        \resumeItem{Implemented epoll-based event architecture, reducing response time from \textbf{40s to 3.9s} (ApacheBench).}
+        \resumeItem{Optimized parsing and networking, improving accuracy and browser compatibility.}
+      \resumeItemListEnd
 
-    
 
-    
+        \resumeProjectHeading
+      {\textbf{\href{https://github.com/vaibhavGala262/NutShell}{NutShell}} $|$ \emph{C, POSIX, GNU Readline, Makefile}}{June 2025 -- July 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered Unix shell in C supporting pipelines, conditional operators \texttt({\&\&}, \texttt{||}), and I/O redirection (\texttt{>}, \texttt{>>}, \texttt{<}).}
+        \resumeItem{Implemented process control using \texttt{fork()}, \texttt{exec()}, \texttt{wait()}, and file descriptor management via \texttt{dup2()}.}
+        \resumeItem{Structured modular architecture with syntax parsing, environment variable handling, persistent history, and scripted build system.}
+      \resumeItemListEnd
 
 
 
-%
+      
+       \resumeProjectHeading
+      {\textbf{\href{https://github.com/vaibhavGala262/InternConnect}{InternConnect}} $|$ \emph{Next.js, FastAPI, PostgreSQL, LangGraph, Supabase}} {April 2025 -- June 2025}
+      \resumeItemListStart
+        \resumeItem{Built scalable internship platform enabling structured student--faculty collaboration and opportunity discovery.}
+        \resumeItem{Integrated WebSocket-based real-time chat and \textbf{LangGraph} multi-agent chatbot for query automation.}
+        \resumeItem{Created self-triggered Excel export pipeline for enrollment tracking, saving \textbf{30--40 min} per batch.}
+      \resumeItemListEnd
+
+
+
+
+
+  \resumeSubHeadingListEnd
+
+
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \textbf{Languages \& Web}{: Java, Python, C, JavaScript, HTML/CSS, React.js, Django, Flask, FastAPI, Streamlit} \\
-    \textbf{Databases \& Cloud}{: PostgreSQL, MySQL, Supabase, ChromaDB, Firebase, AWS(Basics), Vercel, Render} \\
-    \textbf{GenAI \& LLMs}{: LangChain, LangGraph, MCP (Basics), HuggingFace, LLaMA, Gemini, Grok,Deepseek} \\
-    \textbf{Dev Tools \& Knowledge}{: Git, Docker, GitHub, Postman, VS Code, Google Colab,Machine Learning}
-  }}
-
-
- \end{itemize}
- 
-
-
-
-
-
-
+  \resumeSubHeadingListStart
+    \resumeItem{
+      \textbf{Programming \& CS Fundamentals}{: Java, Python, C, Data Structures, Algorithms, Object-Oriented Design} \\
+      \textbf{Web \& Frameworks}{: JavaScript, HTML/CSS, React.js, Vite, Spring Boot, Spring JPA, Spring Security, FastAPI} \\
+      \textbf{Databases \& Cloud}{: PostgreSQL, MySQL, MongoDB,  Supabase, Firebase, ChromaDB, Vercel, Render} \\
+      \textbf{GenAI \& LLMs}{: LangChain, LangGraph, MCP (Basics), HuggingFace, LLaMA, Gemini, Grok, DeepSeek} \\
+      \textbf{Devops \& Messaging}{: Docker, Git, GitHub, Nginx, AWS (EC2, S3), Jenkins, SonarQube, Kafka, Zookeeper, Redis} \\
+      \textbf{Dev Tools \& Knowledge}{: Postman, VS Code, Google Colab,  IntelliJ IDEA, Machine Learning, REST APIs }
+    }
+  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
