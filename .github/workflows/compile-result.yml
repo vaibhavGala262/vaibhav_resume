@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p output
           cp main.pdf output/resume.pdf
-          pdftoppm -png -f 1 -singlefile resume.pdf output/resume-preview
+          pdftoppm -png -f 1 -singlefile main.pdf output/resume-preview
 
       - name: Commit generated resume
         uses: stefanzweifel/git-auto-commit-action@v5
