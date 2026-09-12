@@ -1,8 +1,8 @@
-# Vaibhav Gala — Resume
+# Vaibhav Gala - Resume
 
 <p align="center">
-  <a href="./output/resume.pdf">
-    <img src="https://img.shields.io/badge/View-Latest%20Resume-red?style=for-the-badge&logo=adobeacrobatreader"/>
+  <a href="https://github.com/vaibhavGala262/vaibhav_resume/raw/main/output/resume.pdf">
+    <img src="https://img.shields.io/badge/Download-Latest%20Resume-red?style=for-the-badge&logo=adobeacrobatreader"/>
   </a>
 </p>
 
@@ -18,6 +18,6 @@
 
 ### Download PDF
 
-📄 **[Latest Resume (PDF)](./output/resume.pdf)**
+📥 **[Download Latest Resume (PDF)](https://github.com/vaibhavGala262/vaibhav_resume/raw/main/output/resume.pdf)**
 
-Built from `main.tex` using push on main trigger via GitHub Actions workflow.
+Built from `main.tex` using GitHub Actions on every push to the `main` branch.
