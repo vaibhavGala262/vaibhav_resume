@@ -2,6 +2,9 @@ name: Build Resume PDF
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -17,7 +20,7 @@ jobs:
       - name: Compile LaTeX resume
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: resume.tex
+          root_file: main.tex
 
       - name: Install Poppler
         run: |
