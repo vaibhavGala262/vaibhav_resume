@@ -30,7 +30,7 @@ jobs:
       - name: Generate PDF and Preview Image
         run: |
           mkdir -p output
-          cp resume.pdf output/resume.pdf
+          cp main.pdf output/resume.pdf
           pdftoppm -png -f 1 -singlefile resume.pdf output/resume-preview
 
       - name: Commit generated resume
