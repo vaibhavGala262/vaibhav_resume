@@ -1,0 +1,257 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+
+
+\newcommand{\tightAchievementItem}[1]{
+  \item \small{#1} \vspace{-5pt}
+}
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vaibhav Gala} \\ \vspace{1pt}
+    \small +91-8779047056 $|$ \href{mailto:x@x.com}{\underline{vaibhavgala262@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/vaibhav-gala-a39029280}{\underline{LinkedIn}} $|$
+    \href{https://github.com/vaibhavGala262}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dwarkadas J. Sanghvi College of Engineering}{Mumbai, Maharashtra}
+      {Bachelor of Technology in Computer Science , CGPA :8.73}{Aug. 2023 -- Present}
+    \resumeSubheading
+      {SVKM's Mithibai College of Arts}{Mumbai, Maharashtra}
+      {HSC – Maharashtra Board, PCM: 89.67}{Aug. 2016 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.30in]
+  \tightAchievementItem{Achieved \textbf{AIR 6934} in \textbf{JEE Main 2023} with \textbf{99.4 percentile}, ranked in top \textbf{0.6\%} of \textbf{11.13 lakh} candidates.}
+
+  \tightAchievementItem{Secured \textbf{AIR 11640} in \textbf{JEE Advanced 2023}, among the top \textbf{6.5\%} of \textbf{1.8 lakh} qualified aspirants.}
+  
+  \tightAchievementItem{Scored \textbf{99.3 percentile} in \textbf{MHT-CET 2023}, placing in the top \textbf{0.7\%} out of \textbf{5.91 lakh} students.}
+
+  \tightAchievementItem{Scored \textbf{99/100} in Operating Systems, among the highest in a batch of \textbf{206} Computer Engineering students.}
+
+\tightAchievementItem{Solved \textbf{400+ problems} on LeetCode; currently ranked \textbf{202,237}, placing in the top \textbf{28\%} globally.}
+
+\tightAchievementItem{Reached CodeChef \textbf{3-Star} (Max rating: \textbf{1627}), outperforming over \textbf{90\%} of 180,000+ active coders globally.}
+
+  
+\end{itemize}
+
+  
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{\href{https://intern-connect-app.vercel.app/}{InternConnect}} $|$ \emph{Next.js, FastAPI, PostgreSQL, LangGraph,SupaBase}}{April 2025 -- June 2025}
+    \resumeItemListStart
+      \resumeItem{Built a full-stack platform to connect students and teachers for internship discovery and communication.}
+      \resumeItem{Implemented real-time chat for doubt clarification between students and faculty using WebSocket-based messaging}
+      \resumeItem{Integrated a LangGraph-based chatbot to answer internship queries via multi-agent tool use.}
+      \resumeItem{Added Excel export for enrolled students, saving \textbf{30–40 minutes} per batch and removing manual tracking.}
+
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/vaibhavGala262/NutShell}{NutShell}} $|$ \emph{C, POSIX, GNU Readline, Makefile}}{July 2025}
+    \resumeItemListStart
+      \resumeItem{Built a Unix-style shell to deepen understanding of \textbf{process creation}, memory, and job control in Linux.}
+      \resumeItem{Learnt key OS-level operations by implementing \texttt{fork()}, \texttt{exec()}, and \texttt{wait()} for task management.}
+      \resumeItem{Explored terminal interaction by integrating \textbf{GNU Readline} for command editing and history.}
+      \resumeItem{Added support for \textbf{built-in commands}, multi-command execution, and background jobs via shell parsing.}
+      \resumeItem{Structured project modularly using \texttt{parser.c}, \texttt{executor.c}, \texttt{builtins.c}, and Makefile automation.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/vaibhavGala262/CodeSanitizer}{CodeSanitizer}} $|$ \emph{TypeScript, VS Code API, Git Hooks}}{July 2025}
+    \resumeItemListStart
+      \resumeItem{Built a VS Code extension to remove debug prints and comments across \textbf{30+ languages},improving code hygiene.}
+      \resumeItem{Added highlight toggling, one-click cleaning, and undo support to streamline the debugging workflow.}
+      \resumeItem{Integrated Git support to clean staged files and enabled smart repository detection for consistent code quality.}
+      \resumeItem{Saved developers \textbf{10–15 minutes per commit} by automating repetitive code cleanup tasks.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+  {\textbf{\href{https://textutils-two-beige.vercel.app/}{TextUtils}} $|$ \emph{React, Vite, TailwindCSS, APIs}}{August 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built a responsive text utility app with case conversion, word/char counters, and smart formatting tools.}
+    \resumeItem{Implemented NLP features like word frequency, \textbf{70\%} text summarization, and Flesch readability scoring.}
+    \resumeItem{Added text-to-speech, speech-to-text (Web Speech API), and translation using Google Translate API.}
+    \resumeItem{Enabled export to PDF/DOCX, saving \textbf{2–3 minutes} per document and streamlining user workflow.}
+    \resumeItem{Enhanced UX with dark/light themes, keyboard shortcuts, analytics, and framer-motion animations.}
+  \resumeItemListEnd
+
+
+%-----------VIRTUAL EXPERIENCE-----------
+\section{Virtual Experience}
+\vspace{-0.8em} % <-- reduce vertical space after the section title
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Deloitte Technology Consulting (Forage)} $|$ \emph{Virtual Job Simulation}}{July 2025}
+    \resumeItemListStart
+      \vspace{0.5em} % <-- Add this line for vertical spacing
+      \resumeItem{Drafted a software development proposal for a client dashboard based on simulated requirements.}
+      \resumeItem{Automated the merging of \textbf{2 JSON datasets} using Python, reducing manual formatting work by \textbf{80\%}.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+
+
+
+    
+
+
+    
+
+    
+
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages \& Web}{: Java, Python, C, JavaScript, HTML/CSS, React.js, Django, Flask, FastAPI, Streamlit} \\
+    \textbf{Databases \& Cloud}{: PostgreSQL, MySQL, Supabase, ChromaDB, Firebase, AWS(Basics), Vercel, Render} \\
+    \textbf{GenAI \& LLMs}{: LangChain, LangGraph, MCP (Basics), HuggingFace, LLaMA, Gemini, Grok,Deepseek} \\
+    \textbf{Dev Tools \& Knowledge}{: Git, Docker, GitHub, Postman, VS Code, Google Colab,Machine Learning}
+  }}
+
+
+ \end{itemize}
+ 
+
+
+
+
+
+
+
+%-------------------------------------------
+\end{document}
