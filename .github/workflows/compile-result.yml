@@ -1,0 +1,37 @@
+name: Build Resume PDF
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX resume
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+
+      - name: Install Poppler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+
+      - name: Generate PDF and Preview Image
+        run: |
+          mkdir -p output
+          cp resume.pdf output/resume.pdf
+          pdftoppm -png -f 1 -singlefile resume.pdf output/resume-preview
+
+      - name: Commit generated resume
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update generated resume PDF and preview"
+          file_pattern: output/resume.pdf output/resume-preview.png
