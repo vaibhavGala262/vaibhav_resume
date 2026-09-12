@@ -20,4 +20,4 @@
 
 📄 **[Latest Resume (PDF)](./output/resume.pdf)**
 
-Built from `resume.tex` using a manually triggered GitHub Actions workflow.
+Built from `main.tex` using push on main trigger via GitHub Actions workflow.
